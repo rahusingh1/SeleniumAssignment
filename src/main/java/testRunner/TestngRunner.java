@@ -10,13 +10,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 
 import seleniumKeyword.SeleniumKeywords;
 import utilities.PropReader;
 
 public class TestngRunner {
-    
+
     public static Properties props;
     public static WebDriver driver;
     public SeleniumKeywords seleniumKeywords;
@@ -36,7 +35,7 @@ public class TestngRunner {
 
     @BeforeMethod
     public void openURl() {
-        seleniumKeywords.navigateTo(driver, props.getProperty("URL"));        
+        seleniumKeywords.navigateTo(driver, props.getProperty("URL"));
     }
 
     @AfterMethod

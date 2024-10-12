@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class SeleniumKeywords {
-	
+
 	// Launch the browser
 	public WebDriver launchBrowser(String browserName) {
 		WebDriver driver = null;
@@ -34,29 +34,29 @@ public class SeleniumKeywords {
 		}
 		return driver;
 	}
-	
+
 	// Navigate to the url
 	public void navigateTo(WebDriver driver,String URL) {
-		driver.get(URL);		
+		driver.get(URL);
 	}
-	
+
 	// Navigate to the previous page of current url
 	public void navigateToPreviousPage(WebDriver driver) throws Exception {
 		driver.navigate().back();
 	}
-	
+
 	// Method to wait for the element until it is available
 	public void waitForElementToBeClickable(WebDriver driver,By by) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
    	    wait.until(ExpectedConditions.elementToBeClickable(by));
    	}
-	
+
 	// Method to wait for the element until it is visible or available in DOM
 	public void waitForElementToBeVisible(WebDriver driver,By by) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
    	    wait.until(ExpectedConditions.visibilityOfElementLocated(by));
    	}
-	
+
 	// Take screenshot
 	public void takeScreenShot(WebDriver driver) {
 		try {
@@ -64,7 +64,7 @@ public class SeleniumKeywords {
         	String projectFolder=System.getProperty("user.dir");
         	String dateName = new SimpleDateFormat("yyyyMMddhhmmssSS").format(new Date());
         	String destination = projectFolder+"\\screenshot\\"+dateName+".jpg";
-        	FileUtils.copyFile(src, new File(destination));			
+        	FileUtils.copyFile(src, new File(destination));
 		} catch (IOException e) {
 			System.out.println("Error in taking Screen shots");
 		}
