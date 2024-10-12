@@ -1,1 +1,1 @@
-This repo is used for the DevOpsTest assignment.
+This repo is used for the DevTestOps assignment.
