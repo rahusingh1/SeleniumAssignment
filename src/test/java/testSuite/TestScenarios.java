@@ -16,7 +16,7 @@ public class TestScenarios extends TestngRunner {
     @Test(priority=0, groups= {"smoke"})
     public static void verifyHomePageTitle() {
         
-        String expectedTitle = "Book Bus Tickets Online, Easy & Secure Booking, Top Operators - redBus";
+        String expectedTitle = "Bus Ticket Booking Online made Easy, Secure with Top Bus Operators - redBus";
         String actualTitle = driver.getTitle();
 
         try {
@@ -43,8 +43,8 @@ public class TestScenarios extends TestngRunner {
         destination.sendKeys("Haridwar");
         
         seleniumKeywords.waitForElementToBeVisible(driver, Homepage.selectDest);
-        WebElement selectdest = driver.findElement(Homepage.selectDest);       
-        selectdest.click();
+        WebElement selectdesti = driver.findElement(Homepage.selectDest);
+        selectdesti.click();
         
         WebElement date = driver.findElement(Homepage.dateField);
         date.click();

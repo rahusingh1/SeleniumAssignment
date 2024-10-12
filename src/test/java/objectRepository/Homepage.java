@@ -8,7 +8,7 @@ public interface Homepage {
 	By source= By.xpath("//input[@id=\"src\"]");
 	By selectSource= By.cssSelector("li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText']");
 	By dest= By.xpath("//input[@id=\"dest\"]");
-	By selectDest= By.xpath("li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText']");
+	By selectDest= By.xpath("//div[@class='sc-gZMcBi hviMLb']//text[@class='placeHolderMainText'][normalize-space()='Haridwar']");
 	By dateField= By.xpath("//div[@id=\"onwardCal\"]");
 	
 	By mY= By.cssSelector("div[class='DayNavigator__CalendarHeader-qj8jdz-1 fxvMrr'] div:nth-child(2)");
