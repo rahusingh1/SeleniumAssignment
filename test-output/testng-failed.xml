@@ -9,7 +9,7 @@
           <include name="afterTest"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
-          <include name="verifySearchBuses"/>
+          <include name="verifyGovtBuses"/>
           <include name="openURl"/>
         </methods>
       </class> <!-- testSuite.TestScenarios -->

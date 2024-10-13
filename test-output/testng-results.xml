@@ -1,115 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-26T10:57:02 IST" name="Default suite" finished-at="2024-04-26T10:57:12 IST" duration-ms="9603">
+  <suite started-at="2024-10-13T14:26:00 IST" name="Default suite" finished-at="2024-10-13T14:26:12 IST" duration-ms="11672">
     <groups>
       <group name="regression">
-        <method signature="TestScenarios.verifySearchBuses()[pri:1, instance:testSuite.TestScenarios@6cd28fa7]" name="verifySearchBuses" class="testSuite.TestScenarios"/>
+        <method signature="TestScenarios.verifySearchBuses()[pri:2, instance:testSuite.TestScenarios@16293aa2]" name="verifySearchBuses" class="testSuite.TestScenarios"/>
       </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TestScenarios.verifyGovtBuses()[pri:1, instance:testSuite.TestScenarios@16293aa2]" name="verifyGovtBuses" class="testSuite.TestScenarios"/>
+        <method signature="TestScenarios.verifyHomePageTitle()[pri:0, instance:testSuite.TestScenarios@16293aa2]" name="verifyHomePageTitle" class="testSuite.TestScenarios"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-04-26T10:57:02 IST" name="Default test" finished-at="2024-04-26T10:57:12 IST" duration-ms="9603">
+    <test started-at="2024-10-13T14:26:00 IST" name="Default test" finished-at="2024-10-13T14:26:12 IST" duration-ms="11672">
       <class name="testSuite.TestScenarios">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testSuite.TestScenarios@6cd28fa7]" started-at="2024-04-26T10:57:02 IST" name="beforeSuite" finished-at="2024-04-26T10:57:02 IST" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:00 IST" name="beforeSuite" finished-at="2024-10-13T14:26:00 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testSuite.TestScenarios@6cd28fa7]" started-at="2024-04-26T10:57:02 IST" name="beforeTest" finished-at="2024-04-26T10:57:04 IST" duration-ms="2368" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:00 IST" name="beforeTest" finished-at="2024-10-13T14:26:03 IST" duration-ms="2470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="openURl()[pri:0, instance:testSuite.TestScenarios@6cd28fa7]" started-at="2024-04-26T10:57:04 IST" name="openURl" finished-at="2024-04-26T10:57:10 IST" duration-ms="5110" status="PASS">
+        <test-method is-config="true" signature="openURl()[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:03 IST" name="openURl" finished-at="2024-10-13T14:26:04 IST" duration-ms="1110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURl -->
-        <test-method signature="verifySearchBuses()[pri:1, instance:testSuite.TestScenarios@6cd28fa7]" started-at="2024-04-26T10:57:10 IST" name="verifySearchBuses" finished-at="2024-04-26T10:57:11 IST" duration-ms="1405" status="FAIL">
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string 'li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText']' is not a valid XPath expression."}
-  (Session info: chrome=124.0.6367.78)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2529c51d7e4344f4b1b076502a291050, findElement {using=xpath, value=li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\RAHULS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62096}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62096/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2529c51d7e4344f4b1b076502a291050]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string 'li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText']' is not a valid XPath expression."}
-  (Session info: chrome=124.0.6367.78)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2529c51d7e4344f4b1b076502a291050, findElement {using=xpath, value=li[class='sc-iwsKbI jTMXri cursorPointing'] text[class='placeHolderMainText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\RAHULS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62096}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62096/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2529c51d7e4344f4b1b076502a291050
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-at seleniumKeyword.SeleniumKeywords.waitForElementToBeVisible(SeleniumKeywords.java:57)
-at testSuite.TestScenarios.verifySearchBuses(TestScenarios.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:04 IST" name="verifyHomePageTitle" finished-at="2024-10-13T14:26:04 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchBuses -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.TestScenarios@6cd28fa7]" started-at="2024-04-26T10:57:11 IST" name="afterMethod" finished-at="2024-04-26T10:57:11 IST" duration-ms="239" status="PASS">
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:04 IST" name="afterMethod" finished-at="2024-10-13T14:26:04 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchBuses status=FAILURE method=TestScenarios.verifySearchBuses()[pri:1, instance:testSuite.TestScenarios@6cd28fa7] output={null}]]]>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=TestScenarios.verifyHomePageTitle()[pri:0, instance:testSuite.TestScenarios@16293aa2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testSuite.TestScenarios@6cd28fa7]" started-at="2024-04-26T10:57:11 IST" name="afterTest" finished-at="2024-04-26T10:57:12 IST" duration-ms="452" status="PASS">
+        <test-method is-config="true" signature="openURl()[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:04 IST" name="openURl" finished-at="2024-10-13T14:26:04 IST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURl -->
+        <test-method signature="verifyGovtBuses()[pri:1, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:04 IST" name="verifyGovtBuses" finished-at="2024-10-13T14:26:06 IST" duration-ms="1125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGovtBuses -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:06 IST" name="afterMethod" finished-at="2024-10-13T14:26:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGovtBuses status=SUCCESS method=TestScenarios.verifyGovtBuses()[pri:1, instance:testSuite.TestScenarios@16293aa2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="openURl()[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:06 IST" name="openURl" finished-at="2024-10-13T14:26:06 IST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURl -->
+        <test-method signature="verifySearchBuses()[pri:2, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:06 IST" name="verifySearchBuses" finished-at="2024-10-13T14:26:11 IST" duration-ms="4859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBuses -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:11 IST" name="afterMethod" finished-at="2024-10-13T14:26:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchBuses status=SUCCESS method=TestScenarios.verifySearchBuses()[pri:2, instance:testSuite.TestScenarios@16293aa2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testSuite.TestScenarios@16293aa2]" started-at="2024-10-13T14:26:11 IST" name="afterTest" finished-at="2024-10-13T14:26:12 IST" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

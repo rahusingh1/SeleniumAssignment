@@ -24,8 +24,29 @@ public class TestScenarios extends TestngRunner {
             System.out.println("Home page title is incorrect");
         }
     }
+    
+    @Test(priority=1, groups= {"smoke"})
+    public static void verifyGovtBuses() {
+    	
+    	SeleniumKeywords seleniumKeywords = new SeleniumKeywords();
+    	
+        String expectedString = "GOVERNMENT BUSES";
+        
+        seleniumKeywords.waitForElementToBeVisible(driver, Homepage.GovtBusHeading);
+        WebElement GovtBusesHead = driver.findElement(Homepage.GovtBusHeading);
+        GovtBusesHead.click();
+        String actualString = GovtBusesHead.getText();
+        System.out.println(actualString);
 
-    @Test(priority=1, groups= {"regression"})
+        try {
+            Assert.assertEquals(expectedString, actualString);
+            System.out.println("Found Govt buses option");
+        } catch (Exception e) {
+            System.out.println("Govt buses option not found");
+        }
+    }
+
+    @Test(priority=2, groups= {"regression"})
     public static void verifySearchBuses() {
 
     	SeleniumKeywords seleniumKeywords = new SeleniumKeywords();

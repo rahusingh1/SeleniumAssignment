@@ -16,4 +16,6 @@ public interface Homepage {
 	By date= By.xpath("//span[normalize-space()='25']");
 
 	By SearchButton= By.xpath("//button[@id='search_button']");
+	
+	By GovtBusHeading = By.xpath("//div[@class='loaderHeading']");
 }
